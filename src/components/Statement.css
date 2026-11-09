@@ -1,0 +1,113 @@
+.statement-container {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: calc(100vh - 80px);
+  background-color: #f5f7fa;
+}
+
+.statement-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 1000px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.statement-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.statement-header h2 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  color: #2c3e50;
+}
+
+.account-summary {
+  background: #f8f9fa;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.account-summary p {
+  margin: 0;
+  color: #555;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.statement-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.statement-table th,
+.statement-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.statement-table th {
+  background-color: #f8f9fa;
+  color: #7f8c8d;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.statement-table tr:hover {
+  background-color: #fcfcfc;
+}
+
+.mono {
+  font-family: monospace;
+  color: #666;
+}
+
+.amount-debit {
+  color: #e74c3c;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.status-badge {
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.status-badge.success {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-badge.failed {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.loading, .no-data, .error-msg {
+  text-align: center;
+  padding: 3rem;
+  color: #7f8c8d;
+}
+
+.error-msg {
+  color: #e74c3c;
+}

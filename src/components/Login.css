@@ -1,0 +1,155 @@
+:root {
+  --bg: #f5f7fa;
+  --card: #ffffff;
+  --accent: #0056b3;
+  --muted: #7f8c8d;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.login-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.15); /* Adjust opacity here */
+  z-index: 1;
+}
+
+.login-header, .login-card {
+  position: relative;
+  z-index: 2;
+}
+
+.login-header {
+  padding: 1rem 2rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.login-logo {
+  height: 40px;
+  width: auto;
+}
+
+.login-header h1 {
+  margin: 0;
+  color: var(--accent);
+  font-size: 1.25rem;
+}
+
+.login-card {
+  margin: 3rem auto;
+  width: 420px;
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.login-card h2 {
+  margin: 0 0 1rem 0;
+  color: #213547;
+}
+
+.login-form .field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.label-text {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
+.login-form input {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #e6e9ee;
+  outline: none;
+  font-size: 1rem;
+}
+
+.login-form input:focus {
+  box-shadow: 0 0 0 3px rgba(0,86,179,0.08);
+  border-color: var(--accent);
+}
+
+.password-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input-wrapper input {
+  width: 100%;
+  padding-right: 3.5rem; /* Make space for the button */
+}
+
+.show-password-btn {
+  position: absolute;
+  right: 0.5rem;
+  background: rgba(0, 86, 179, 0.1);
+  border: 1px solid rgba(0, 86, 179, 0.2);
+  color: var(--accent);
+  font-size: 0.75rem;
+  cursor: pointer;
+  padding: 0.2rem 0.6rem;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.show-password-btn:hover {
+  background: rgba(0, 86, 179, 0.2);
+  border-color: var(--accent);
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.primary-btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.primary-btn:hover {
+  opacity: 0.95;
+}
+
+.link-btn {
+  background: transparent;
+  border: none;
+  color: var(--accent);
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .login-card { width: 92%; margin: 2rem auto; }
+}
